@@ -20,5 +20,5 @@ This Python script demonstrates how to control the angle of a servo motor using 
 The script uses the RPi.GPIO library for Raspberry Pi GPIO control and the Flask library for creating a web server.
 It sets up GPIO pin 25 as an output for controlling the servo motor.
 The Flask app has two routes:
-/: This route renders an HTML template called index.html, which contains an input field to specify the servo angle and a button to submit the angle.
-/move_servo: This route is used to move the servo to the specified angle by changing the duty cycle of the PWM signal.
+'/' : This route renders an HTML template called index.html, which contains an input field to specify the servo angle and a button to submit the angle.
+'/move_servo': This route is used to move the servo to the specified angle by changing the duty cycle of the PWM signal.
