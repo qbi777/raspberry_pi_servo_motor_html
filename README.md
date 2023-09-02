@@ -4,10 +4,10 @@ Raspberry Pi Servo Motor Angle Control with Flask This Python script allows you 
 
 Note:
   Both servo.py and the templates files want to take place in the same folder.
+  
+![html_servo](https://github.com/qbi777/raspberry_pi_servo_motor_html/assets/123941775/0e92e1bd-2419-4b80-b595-f387cd9e1d98)
 
 Before running this code, make sure you have the following components and software set up:
-![raspberry_pi_servo_motor](https://github.com/qbi777/raspberry_pi_servo_motor_html/assets/123941775/1170e7ca-6d5f-4a07-ae15-957ba6ae7a2f)
-
 Raspberry Pi (any model with GPIO pins)
 RPi.GPIO library (Python library for GPIO control)
 Python 3
