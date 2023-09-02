@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Servo Control</title>
+</head>
+<body>
+    <h1>Servo Control</h1>
+    
+    <button id="btn_0to180" onclick="moveServo(0)">0 to 180</button>
+    <button id="btn_180to0" onclick="moveServo(180)">180 to 0</button>
+    
+    <script>
+        function moveServo(angle) {
+            fetch('/move_servo', {
+                method: 'POST',
+                body: 'angle=' + angle,
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                },
+            });
+        }
+    </script>
+</body>
+</html>
