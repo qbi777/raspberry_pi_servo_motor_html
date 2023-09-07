@@ -7,9 +7,9 @@ app = Flask(__name__)
 # Set GPIO numbering mode
 GPIO.setmode(GPIO.BCM)
 
-# Set pin 25 as an output, and define it as the servo PWM pin
+# Set pin 11 as an output, and define it as the servo PWM pin
 GPIO.setup(25, GPIO.OUT)
-servo = GPIO.PWM(25, 50)  # Pin 25 for servo, pulse 50Hz
+servo = GPIO.PWM(25, 50)  # Pin 11 for servo, pulse 50Hz
 servo.start(0)  # Start servo at 0 degrees
 
 @app.route('/')
@@ -32,5 +32,4 @@ if __name__ == '__main__':
     finally:
         servo.stop()
         GPIO.cleanup()
-        app.run(host='0.0.0.0', port=8080, debug=True)
-    
+
